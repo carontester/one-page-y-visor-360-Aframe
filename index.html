@@ -1,0 +1,359 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Louvre & Oko</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+	<style>
+        header {
+            background-color: #EDD9B2;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+<body style="background-color: #242424; color: #EBEBEB;">
+</body>
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo Louvre</a>
+          <a href="#secc2">Oko</a>
+          <a href="#secc3">Autores y Obras</a>
+          <a href="#secc4">Cinematografía</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Museo Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Louvre es el museo nacional y galería de arte de Francia, construido en un palacio de Paris en el Siglo XII.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Se trata de uno de los museos más visitados en el mundo, con una colección que data de civilizaciones antiguas hasta el propio Siglo XIX. Siendo la Mona Lisa de Leonardo da Vinci, y Venus de Milo algunas de las atracciones más populares del museo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+    			<center>
+        		<a href="360visualizar.html">
+        			<img src="imagenes/louvre_360.jpg">
+				</a>
+        		<!--texto para la imagen-->
+        		<p>Bienvenido a Louvre</p>
+        	</center>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Oko</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Durante el Siglo XX la humanidad se vió envuelta en el conflicto bélico más catastrófico de nuestra historia. La Segunda Guerra Mundial se extendió por 6 arduos años, y para cuando esta finalizó, el mundo contempló con horror lo que el partido Nacional Socialista (o nazis como se les conocía) habían hecho de su país y su sociedad, para poco después lidiar con la disputa que fué la Guerra Fría entre la Unión Soviética y los Estados Unidos de América. La USSR en su caso repitió muchas de las tácticas de control de masas vistas en Alemania cuando el partido nazi reinaba.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Desde entonces, el mundo se ha visto vigilante ante la idea que significa un gobierno totalitario y opresivo en el que el concepto del individuo no existe. Tu vida es para el partido, y sin el partido, tu vida no vale nada. Control de la población, espionaje masivo, corrupción de poder, el fin de la autonomía en una forma de gobierno que logra eternizarse. </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>A raíz de esta terrible posibilidad, autores han surgido con el paso de las decadas discutiendo como algo tan monstruoso como el partido nazi o el gobierno stalinista se conciben en la sociedad, y lo que significan para nuestro futuro. Oko es una celebración a esa discusión. Una feria realizada en colaboración con el museo Louvre que busca compartir con la sociedad los trabajos de autores que han abordado este tema tan importante para estar siempre en guardia. </p>
+				<br>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<iframe width="1280" height="720" src="https://www.youtube.com/embed/fKEqS-53GI8?si=N2Pn9NFtRWOBQ28X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        		<!--texto para la imagen-->
+        		<p>Por un futuro en el que podamos seguir decidiéndo lo que queremos ser.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Autores y Obras</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Los libros desde que existen son un grimorio que contiene conocimiento en muchas formas. Puede tratarse de compendios históricos que redactan el pasado de forma objetiva, y otros más subjetivos que utilizan narración en forma de obras de ficción para hacer alegorías a la realidad.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>Los autores que se han de ver a continuación utilizaron su talento para reflexionarse en las cosas que se vieron en la Segunda Guerra Mundial, la Guerra Fría y las terribles acciones que se vieron en la sociedad para que el mundo nunca olvide.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/antony_sutton.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Antony Cyril Sutton</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido el 14 de Febrero de 1925, estudió en las universidades de Londres, Gottingen y California y se volvió profesor de economía en la Universidad del Estado de California.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>Su trabajo más notorio es la Trilogía de Wall Street, con los libros:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		         <p>- Wall Street y la Revolución Bolchevique</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>- Wall Street y FDR</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>- Wall Street y el Ascenso de Hitler</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/SMJo_DXX0kA?si=f2OYgHQrJQujuFLP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>En estos libros, Sutton habla de las contribuciones de Estados Unidos a la revolución bochevique buscando destruir la economía rusa y a las campañas de Adolf Hitler y Franklin Delano Roosevelt buscaban impulsar socialismo corporativo para asegurar monopolios.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/jorge_guerra.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Jorge Guerra.</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Se trata de un investigador e historiador que se ha dedicado por muchos años a la investigación cultural.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Su trabajo más importante ha sido la serie de libros denominados "La Nobleza Negra":</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- Génesis del Imperio Veneciano</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- El Imperio Angloveneciano</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>- El Imperio de la Tercera Guerra Mundial</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/t3UojfkRjdw?si=RXfVzl4j9jChW2Dq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>En estos libros, Guerra narra sobre los intereses geopolíticos de las figuras de autoridad del tiempo respectivo de cada libro, y cómo la corrupción desembocó en la violencia y represión que asotó a la humanidad durante el oscurantismo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/guillermo_arellano.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Guillermo Mas Arellano</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido el 3 de Noviembre de 1998, es estudioso de cinematografía y teoría literaria. Tiene una larga carrera como articultista en medios de comunicación como Correo España, La Gaceta, entre otros.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Su trabajo más importante es el libro:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- La Traición de los Europeos: Ensayos de Tradición, Modernidad y Crítica Cultural</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/8wXrv7s8kAc?si=JJm_vzW0kXgb7tY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>En el libro, Arellano habla acerca de la destrucción de Europa como un síntoma de la apatía del europeo y como esta puede ser latente aún en la modernidad y repercutir en nuestro futuro.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/george_orwell.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>George Orwell</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Eric Arthur Blair, nacido el 25 de Junio de 1903, conocido bajo el seudónimo George Orwell, fué un novelista, poeta, ensayista y periodista de Londres, Inglaterra.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Sus trabajos más importantes son:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- Animal Farm</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- 1984</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/8VXcrSv6wx4?si=4kZ23Th7ncwbYC5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>En Animal Farm, Orwell rememora la revolución rusa de 1917 y el surgimiento del gobierno de stalinista de la Unión Soviética y como los ideales de la revolución fuercon traicionados, dejando el país en un estado aún peor al que había antes.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>En 1984, presenta un gobierno totalitario construido en base a las prácticas del gobierno visto en los nazis y los stalinistas, liderados por el "Gran Hermano", apoyado por un culto a su persona gracias a la "policia de pensamiento" del partido. Se presenta un sistema de control y vigilancia absoluto en el que la individualidad y el pensamiento independentiene es perseguido ferozmente. Orwell describió la novela como sátira y una muestra de la posible corrupción que puede verse en una economía centralizada, pero sostenía firmemente que las fundaciones del concepto son perfectamente reales.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/aldous_huxley.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Aldous Huxley</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido el 26 de Julio de 1894, fué un escritor y filósofo británico conocido por varias novelas, ensayos, y otras formas de literatura como relatos cortos, poesía, entre otros. </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Su trabajo más destacado es:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- Un Mundo Felíz</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/wUdgS1Nxpfw?si=8Fr6or81lsp67Z0X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>En el libro, Huxley representa un mundo en el que el condicionamiento psicológico es la norma bajo un sistema de castas donde todos </p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/john_perkins.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>John Perkins</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido el 28 de Enero de 1945, es un autor Americano idealista y activista en contra de la corporatización de grandes potencias.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Su trabajo más destacado es:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- Confesiones de un Sicario Económico</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/GNOnoCCin1E?si=gqkead_vyytbi72N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>El libro redacta las experiencias de Perkins como parte de la empresa de consultoría de ingeniería Chas. T. Main, en la que reclama que la NSA hizo arreglos para que fuera contratado para volverse un "sicario económico", convenciendo a lideres de países poco desarrollados a aceptar préstamos substanciales para projectos de ingeniería con la intención de atraparlos en el sistema americano de influencia y control.</p>
+    		</div>
+<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/joost_meerloo.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Joost Meerloo</p>
+    		</div>
+    		<div class="texto-secc">
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido el 14 de Marzo de 1903, fué un médico y psicoanalista Americo-Holandés conocido por sus análisis de las técnicas de "lavado de cerebro" visto en gobiernos represivos.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>Su trabajo más destacado es:</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- The Rape of the Mind: The Psychology of Thought Control</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/UOuZ-j2iU0k?si=Gr5GX_9VaaNQjkLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>El libro analiza las técnicas de control masivo durante la Guerra de Corea de 1950, explicando la ciencia detrás de la manipulación de masas y "lavado de cerebro" a través del miedo para que las personas actúen por instinto en lugar de consciencia.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Cinematografía</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Desde la invención de la pantalla de plata, se han visto muchas producciones cinematográficas que han marcado generaciones enteras, y que aún con el paso de las décadas, se les sigue recordando por las cosas que tienen que decir. De la misma forma que los autores vistos anteriormente, las personas detrás de estras producciones buscan hacer eco de mensajes similares, advertencia de las consecuencias de la corrupción y la apatía.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>- Land of the Blind</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p>- Zettgeist</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <p>- The Money Masters</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<center>
+		        <iframe width="1280" height="720" src="https://www.youtube.com/embed/VLKDJnEaEYw?si=lggULJ0hd1EbQMTt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		      </center>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="https://www.youtube.com/playlist?list=PLDwNC4dir5JZqZZ5wjaB5rbUyM9Rjf3rF">
+	      	<img src="imagenes/ytb.png" title="YouTube">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">Todos los derechos a sus respectivos autores</p>
+	    </div>
+		<style>
+        footer {
+            background-color: #4A2015;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
